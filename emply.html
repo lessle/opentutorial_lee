@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>기업정보시스템</title>
+<link href="/inspinia/css/bootstrap.min.css" rel="stylesheet">
+<link href="/inspinia/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="/inspinia/css/animate.css" rel="stylesheet">
+<link href="/inspinia/css/style.css" rel="stylesheet">
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="/inspinia/js/jquery-3.1.1.min.js"></script>
+<script src="/inspinia/js/bootstrap.min.js"></script>
+<script src="/inspinia/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<!-- SlimScroll 왼쪽 메뉴 고정 -->
+<script src="/inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<!-- Custom and plugin javascript -->
+<script src="/inspinia/js/inspinia.js"></script>
+<script src="/inspinia/js/plugins/pace/pace.min.js"></script>
+<!-- FooTable -->
+<link href="/inspinia/css/plugins/footable/footable.bootstrap.css" rel="stylesheet">
+<script src="/inspinia/js/plugins/footable/footable.js"></script>
+<!-- iCheck -->
+<link href="/inspinia/css/plugins/iCheck/custom.css" rel="stylesheet">
+<script src="/inspinia/js/plugins/iCheck/icheck.min.js"></script>
+<!-- Ladda style -->
+<link href="/inspinia/css/plugins/ladda/ladda-themeless.min.css" rel="stylesheet">
+<script src="/inspinia/js/plugins/ladda/spin.min.js"></script>
+<script src="/inspinia/js/plugins/ladda/ladda.min.js"></script>
+<script src="/inspinia/js/plugins/ladda/ladda.jquery.min.js"></script>
+<!-- Tokeninput -->
+<link href="/inspinia/css/plugins/tokeninput/token-input.css" rel="stylesheet" />
+<script src="/inspinia/js/plugins/tokeninput/jquery.tokeninput.js"></script>
+<!-- Comma -->
+<script src="/inspinia/js/plugins/ksifinance/comma.js"></script>
+<!-- Jasny file upload -->
+<link href="/inspinia/css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+<script src="/inspinia/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+<!-- Summber not -->
+<link href="/inspinia/css/plugins/summernote/summernote.css" rel="stylesheet">
+<link href="/inspinia/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+<script src="/inspinia/js/plugins/summernote/summernote.min.js"></script>
+<!-- ChartJS-->
+<script src="/inspinia/js/plugins/chartJs/Chart.bundle.min.js"></script>
+<!-- Toast.js -->
+<link href="/inspinia/css/plugins/toast/jquery.toast.min.css" rel="stylesheet">
+<script src="/inspinia/js/plugins/toast/jquery.toast.min.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="/inspinia/js/plugins/ksifinance/fastclick.js"></script>
+<script src="/inspinia/js/plugins/ksifinance/jquery.maskedinput-1.4.1.min.js"></script>
+<script src="/inspinia/js/plugins/ksifinance/jquery.validate-1.15.1.min.js"></script>
+<script src="/inspinia/js/plugins/ksifinance/jquery.priceformat.js"></script>
+<style>
+.fund1normal {
+	background-color: rgba(255, 255, 0, 0.2)
+}
+.fund1deep {
+	background-color: rgba(255, 255, 75, 0.2)
+}
+.fund2normal {
+	background-color: rgba(102, 255, 0, 0.2)
+}
+.fund2deep {
+	background-color: rgba(102, 255, 75, 0.2)
+}
+.fund3normal {
+	background-color: rgba(255, 153, 0, 0.2)
+}
+.fund3deep {
+	background-color: rgba(255, 153, 75, 0.2)
+}
+.fund4normal1 {
+	background-color: rgba(153, 255, 255, 0.2)
+}
+.fund4normal2 {
+	background-color: rgba(153, 204, 204, 0.2)
+}
+.fund4normal3 {
+	background-color: rgba(153, 204, 255, 0.2)
+}
+.fund4deep {
+	background-color: rgba(153, 204, 255, 0.2)
+}
+.fund5normal {
+	background-color: #666666
+}
+.fund5deep {
+	background-color: #666666
+}
+.fund6normal {
+	background-color: #666666
+}
+.fund6deep {
+	background-color: #666666
+}
+</style>
+</head>
+<!-- body -->
+<body class="fixed-nav fixed-nav-basic">
+	<div id="wrapper">
+		<!-- 왼쪽 시작 -->
+		
+<nav class="navbar-default navbar-static-side" role="navigation">
+	<div class="sidebar-collapse">
+		<ul class="nav metismenu" id="side-menu">
+			<li class="nav-header" style="padding: 18px 0px 18px 10px"><img src="http://ksifinance.com/SCRT/vendor/images/logo.png" width="200" onclick="location.href='http://ksifinance.com/SCRT/index.php/Welcome'" style="cursor: pointer;"> <!-- div class="dropdown profile-element">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<span class="clear"> <span class="block m-t-xs"> <strong class="font-bold"></strong>
+							</span> <span class="text-muted text-xs block"> <b class="caret"></b></span>
+							</span>
+						</a>
+						<ul class="dropdown-menu animated fadeInRight m-t-xs">
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</div--> <!--  div class="logo-element">IN+</div--></li>
+					
+									
+				<li class="special_link"><a href="#">
+					<span class="nav-label">기업</span>
+				</a></li>
+								<li ><a href="http://ksifinance.com/SCRT/index.php/Member/view/normal/list">
+					<i class="fa fa-user"></i> <span class="nav-label">기본 정보</span>
+				</a></li>
+			<li class="special_link"><a href="#">
+					<span class="nav-label">재무 정보</span>
+				</a></li>
+								<li ><a href="http://ksifinance.com/SCRT/index.php/Finance/view/data/basic/list">
+					<i class="fa fa-thermometer-three-quarters"></i> <span class="nav-label">데이터현황</span>
+				</a></li>
+			<li ><a href="http://ksifinance.com/SCRT/index.php/Finance/view/financial/basic/list">
+					<i class="fa fa-book"></i> <span class="nav-label">재무상태표</span>
+				</a></li>
+			<li ><a href="http://ksifinance.com/SCRT/index.php/Finance/view/profitnloss/basic/list">
+					<i class="fa fa-won"></i> <span class="nav-label">손익계산서</span>
+				</a></li>
+			<li ><a href="http://ksifinance.com/SCRT/index.php/Finance/view/cashflow/basic/list">
+					<i class="fa fa-bar-chart"></i> <span class="nav-label">현금흐름표</span>
+				</a></li>
+			<li ><a href="http://ksifinance.com/SCRT/index.php/Finance/view/cost/basic/list">
+					<i class="fa fa-industry"></i> <span class="nav-label">제조원가명세서</span>
+				</a></li>
+								<li ><a href="http://ksifinance.com/SCRT/index.php/Ratio/view/view/ratio/list">
+					<i class="fa fa-coffee"></i> <span class="nav-label">비율분석(기업별)</span>
+				</a></li>
+			<li class="active"><a href="http://ksifinance.com/SCRT/index.php/Ratio/view/view/distribution/list">
+					<i class="fa fa-hand-scissors-o"></i> <span class="nav-label">비율분석(전체)</span>
+				</a></li>
+			<li ><a href="http://ksifinance.com/SCRT/index.php/Cost/view/view/analysis/list">
+					<i class="fa fa-rocket"></i> <span class="nav-label">비용분석</span>
+				</a></li>
+								<li class="special_link"><a href="#">
+					<span class="nav-label">환경 설정</span>
+				</a></li>
+							<li ><a href="http://ksifinance.com/SCRT/index.php/Login/view/id/list">
+					<i class="fa fa-user-plus"></i> <span class="nav-label">로그인</span>
+				</a></li>
+							<li ><a href="http://ksifinance.com/SCRT/index.php/Account/view/item/list">
+					<i class="fa fa-list-ol"></i> <span class="nav-label">계정 정의</span>
+				</a></li>
+				
+							</ul>
+	</div>
+</nav>		<!-- 왼쪽 끝 -->
+		<div id="page-wrapper" class="gray-bg">
+			<!-- 상단 시작 -->
+			<div class="row border-bottom">
+				<nav class="navbar navbar-fixed-top white-bg" role="navigation" style="margin-bottom: 0">
+					<div class="navbar-header">
+												<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
+							<i class="fa fa-bars"></i>
+						</a>
+						<!-- form role="search" class="navbar-form-custom" method="post" action="#">
+							<div class="form-group">
+								<input type="text" placeholder="keyword" class="form-control" name="top-search" id="top-search">
+							</div>
+						</form-->
+											</div>
+					<ul class="nav navbar-top-links navbar-right">
+						<li>관리자 (admin)</li>
+						<li><a href="http://ksifinance.com/SCRT/index.php/Login/logout">
+								<i class="fa fa-sign-out"></i> Log out
+							</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- 상단 끝 -->
+			<!-- 내용 --><div class="wrapper wrapper-content animated fadeInRight">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="panel panel-info" id="header" style="position: relative; z-index: 99999">
+				<header class="panel-heading">
+					<div class="row">
+						<div class="col-sm-6">
+							<i class="fa fa-user"></i> 재무정보 &gt; 재무비율표 &gt; 분포						</div>
+					</div>
+				</header>
+			</div>
+			<div class="form-group">
+				<div class="ibox float-e-margins">
+					<div class="ibox-content">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="tabs-container">
+									<ul class="nav nav-tabs">
+										<li class="active"><a data-toggle="tab" href="#tab0" onclick="detail(0, '', '')">전체</a></li>
+										<li><a data-toggle="tab" href="#tab1">지역</a></li>
+										<li><a data-toggle="tab" href="#tab2">업종</a></li>
+										<li><a data-toggle="tab" href="#tab3">조직형태</a></li>
+										<li><a data-toggle="tab" href="#tab4">설립연도</a></li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane active" id="tab0"></div>
+																														<div class="tab-pane" id="tab1">
+											<br>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_location', '경기')">경기 (8)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_location', '광주 전남')">광주 전남 (6)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_location', '광주, 전남')">광주, 전남 (2)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_location', '기타')">기타 (2)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_location', '대구')">대구 (4)</button>
+																					<button type="button" class="btn btn-danger btn-sm btn-outline" onclick="detail(0, 'member_location', '대전 충남')">대전 충남 (0)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_location', '대전, 충남')">대전, 충남 (2)</button>
+																					<button type="button" class="btn btn-danger btn-sm btn-outline" onclick="detail(0, 'member_location', '부산 경남')">부산 경남 (0)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_location', '부산, 경남')">부산, 경남 (2)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_location', '서울')">서울 (44)</button>
+																				</div>
+																				<div class="tab-pane" id="tab2">
+											<br>
+																					<button type="button" class="btn btn-danger btn-sm btn-outline" onclick="detail(0, 'member_business', '간병가사지원')">간병가사지원 (0)</button>
+																					<button type="button" class="btn btn-danger btn-sm btn-outline" onclick="detail(0, 'member_business', '건설')">건설 (0)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_business', '관광 운동')">관광 운동 (4)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_business', '교육')">교육 (6)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_business', '기타')">기타 (4)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_business', '기타(IT)')">기타(IT) (12)</button>
+																					<button type="button" class="btn btn-danger btn-sm btn-outline" onclick="detail(0, 'member_business', '기타(건설업)')">기타(건설업) (0)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_business', '기타(공유경제)')">기타(공유경제) (2)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_business', '기타(공정무역)')">기타(공정무역) (4)</button>
+																					<button type="button" class="btn btn-danger btn-sm btn-outline" onclick="detail(0, 'member_business', '기타(금융업)')">기타(금융업) (0)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_business', '기타(식품업)')">기타(식품업) (2)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_business', '기타(요식업)')">기타(요식업) (3)</button>
+																					<button type="button" class="btn btn-danger btn-sm btn-outline" onclick="detail(0, 'member_business', '기타(인쇄업)')">기타(인쇄업) (0)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_business', '기타(제조업)')">기타(제조업) (6)</button>
+																					<button type="button" class="btn btn-danger btn-sm btn-outline" onclick="detail(0, 'member_business', '기타(컨설팅)')">기타(컨설팅) (0)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_business', '농업')">농업 (2)</button>
+																					<button type="button" class="btn btn-danger btn-sm btn-outline" onclick="detail(0, 'member_business', '도소매')">도소매 (0)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_business', '문화예술')">문화예술 (15)</button>
+																					<button type="button" class="btn btn-danger btn-sm btn-outline" onclick="detail(0, 'member_business', '보건')">보건 (0)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_business', '사회복지')">사회복지 (2)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_business', '제조/식품')">제조/식품 (2)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_business', '청소')">청소 (6)</button>
+																					<button type="button" class="btn btn-danger btn-sm btn-outline" onclick="detail(0, 'member_business', '환경')">환경 (0)</button>
+																				</div>
+																				<div class="tab-pane" id="tab3">
+											<br>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_organization', '비영리단체')">비영리단체 (4)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_organization', '사회적기업')">사회적기업 (27)</button>
+																					<button type="button" class="btn btn-danger btn-sm btn-outline" onclick="detail(0, 'member_organization', '사회적협동조합')">사회적협동조합 (0)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_organization', '소셜벤처')">소셜벤처 (16)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_organization', '예비사회적기업')">예비사회적기업 (19)</button>
+																					<button type="button" class="btn btn-danger btn-sm btn-outline" onclick="detail(0, 'member_organization', '중간지원기관')">중간지원기관 (0)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_organization', '협동조합')">협동조합 (4)</button>
+																				</div>
+																				<div class="tab-pane" id="tab4">
+											<br>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_publish_date', '1999')">1999 (2)</button>
+																					<button type="button" class="btn btn-danger btn-sm btn-outline" onclick="detail(0, 'member_publish_date', '2002')">2002 (0)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_publish_date', '2003')">2003 (2)</button>
+																					<button type="button" class="btn btn-danger btn-sm btn-outline" onclick="detail(0, 'member_publish_date', '2004')">2004 (0)</button>
+																					<button type="button" class="btn btn-danger btn-sm btn-outline" onclick="detail(0, 'member_publish_date', '2006')">2006 (0)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_publish_date', '2007')">2007 (2)</button>
+																					<button type="button" class="btn btn-danger btn-sm btn-outline" onclick="detail(0, 'member_publish_date', '2008')">2008 (0)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_publish_date', '2009')">2009 (2)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_publish_date', '2010')">2010 (4)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_publish_date', '2011')">2011 (10)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_publish_date', '2012')">2012 (10)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_publish_date', '2013')">2013 (5)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_publish_date', '2014')">2014 (20)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_publish_date', '2015')">2015 (8)</button>
+																					<button type="button" class="btn btn-success btn-sm btn-outline" onclick="detail(0, 'member_publish_date', '2016')">2016 (5)</button>
+																					<button type="button" class="btn btn-danger btn-sm btn-outline" onclick="detail(0, 'member_publish_date', '2017')">2017 (0)</button>
+																				</div>
+																			</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<canvas id="chart2"></canvas>
+							</div>
+						</div>
+						<br>
+						<div>
+							<div class="col-sm-6"></div>
+							<div class="col-sm-6 text-right"">
+								<button type="button" class="btn btn-primary btn-xs" onclick="composer(1)"><i class="fa fa-arrow-left"></i> </button>
+								<button type="button" class="btn btn-primary btn-xs" onclick="composer(-1)"> <i class="fa fa-arrow-right"></i></button>
+							</div>
+						</div>
+						<table class="table table-bordered table-condensed">
+							<thead>
+								<tr>
+									<th class="text-center"></th>
+									<th class="text-center"></th>
+									<th class="text-center col-sm-1"></th>
+									<th class="text-center col-sm-1"></th>
+									<th class="text-center col-sm-1"></th>
+									<th class="text-center" colspan="6"><span id="year00">2016</span>년(상위3)</th>
+								</tr>
+								<tr>
+									<th class="text-center">구분</th>
+									<th class="text-center">상세</th>
+									<th class="text-center col-sm-1""><span id="year0">2016</span>년</th>
+									<th class="text-center col-sm-1""><span id="year1">2015</span>년</th>
+									<th class="text-center col-sm-1""><span id="year2">2014</span>년</th>
+									<th class="text-center col-sm-1">기업명</th>
+									<th class="text-center col-sm-1">값</th>
+									<th class="text-center col-sm-1">기업명</th>
+									<th class="text-center col-sm-1">값</th>
+									<th class="text-center col-sm-1">기업명</th>
+									<th class="text-center col-sm-1">값</th>
+								</tr>
+							</thead>
+							<tbody>
+																<tr>
+									<td class="text-center">수익성</td>
+									<td>매출액영업이익율 *										<div class="hidden">
+											<div id="year3r10"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r10"></td>
+									<td class="text-right" id="year1r10"></td>
+									<td class="text-right" id="year2r10"></td>
+									<td class="text-center" id="ratio10r11"></td>
+									<td class="text-right" id="ratio10r12"></td>
+									<td class="text-center" id="ratio10r21"></td>
+									<td class="text-right" id="ratio10r22"></td>
+									<td class="text-center" id="ratio10r31"></td>
+									<td class="text-right" id="ratio10r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>매출액순이익율 *										<div class="hidden">
+											<div id="year3r11"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r11"></td>
+									<td class="text-right" id="year1r11"></td>
+									<td class="text-right" id="year2r11"></td>
+									<td class="text-center" id="ratio11r11"></td>
+									<td class="text-right" id="ratio11r12"></td>
+									<td class="text-center" id="ratio11r21"></td>
+									<td class="text-right" id="ratio11r22"></td>
+									<td class="text-center" id="ratio11r31"></td>
+									<td class="text-right" id="ratio11r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>매출원가율										<div class="hidden">
+											<div id="year3r12"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r12"></td>
+									<td class="text-right" id="year1r12"></td>
+									<td class="text-right" id="year2r12"></td>
+									<td class="text-center" id="ratio12r11"></td>
+									<td class="text-right" id="ratio12r12"></td>
+									<td class="text-center" id="ratio12r21"></td>
+									<td class="text-right" id="ratio12r22"></td>
+									<td class="text-center" id="ratio12r31"></td>
+									<td class="text-right" id="ratio12r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>판관비율										<div class="hidden">
+											<div id="year3r13"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r13"></td>
+									<td class="text-right" id="year1r13"></td>
+									<td class="text-right" id="year2r13"></td>
+									<td class="text-center" id="ratio13r11"></td>
+									<td class="text-right" id="ratio13r12"></td>
+									<td class="text-center" id="ratio13r21"></td>
+									<td class="text-right" id="ratio13r22"></td>
+									<td class="text-center" id="ratio13r31"></td>
+									<td class="text-right" id="ratio13r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>이자보상배율 *										<div class="hidden">
+											<div id="year3r14"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r14"></td>
+									<td class="text-right" id="year1r14"></td>
+									<td class="text-right" id="year2r14"></td>
+									<td class="text-center" id="ratio14r11"></td>
+									<td class="text-right" id="ratio14r12"></td>
+									<td class="text-center" id="ratio14r21"></td>
+									<td class="text-right" id="ratio14r22"></td>
+									<td class="text-center" id="ratio14r31"></td>
+									<td class="text-right" id="ratio14r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center">성장성</td>
+									<td>매출액증가율 *										<div class="hidden">
+											<div id="year3r20"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r20"></td>
+									<td class="text-right" id="year1r20"></td>
+									<td class="text-right" id="year2r20"></td>
+									<td class="text-center" id="ratio20r11"></td>
+									<td class="text-right" id="ratio20r12"></td>
+									<td class="text-center" id="ratio20r21"></td>
+									<td class="text-right" id="ratio20r22"></td>
+									<td class="text-center" id="ratio20r31"></td>
+									<td class="text-right" id="ratio20r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>영업이익증가율 *										<div class="hidden">
+											<div id="year3r21"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r21"></td>
+									<td class="text-right" id="year1r21"></td>
+									<td class="text-right" id="year2r21"></td>
+									<td class="text-center" id="ratio21r11"></td>
+									<td class="text-right" id="ratio21r12"></td>
+									<td class="text-center" id="ratio21r21"></td>
+									<td class="text-right" id="ratio21r22"></td>
+									<td class="text-center" id="ratio21r31"></td>
+									<td class="text-right" id="ratio21r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>순이익증가율 *										<div class="hidden">
+											<div id="year3r22"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r22"></td>
+									<td class="text-right" id="year1r22"></td>
+									<td class="text-right" id="year2r22"></td>
+									<td class="text-center" id="ratio22r11"></td>
+									<td class="text-right" id="ratio22r12"></td>
+									<td class="text-center" id="ratio22r21"></td>
+									<td class="text-right" id="ratio22r22"></td>
+									<td class="text-center" id="ratio22r31"></td>
+									<td class="text-right" id="ratio22r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>총자산증가율 *										<div class="hidden">
+											<div id="year3r23"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r23"></td>
+									<td class="text-right" id="year1r23"></td>
+									<td class="text-right" id="year2r23"></td>
+									<td class="text-center" id="ratio23r11"></td>
+									<td class="text-right" id="ratio23r12"></td>
+									<td class="text-center" id="ratio23r21"></td>
+									<td class="text-right" id="ratio23r22"></td>
+									<td class="text-center" id="ratio23r31"></td>
+									<td class="text-right" id="ratio23r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center">현금흐름</td>
+									<td>영업활동조달현금/부채 *										<div class="hidden">
+											<div id="year3r30"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r30"></td>
+									<td class="text-right" id="year1r30"></td>
+									<td class="text-right" id="year2r30"></td>
+									<td class="text-center" id="ratio30r11"></td>
+									<td class="text-right" id="ratio30r12"></td>
+									<td class="text-center" id="ratio30r21"></td>
+									<td class="text-right" id="ratio30r22"></td>
+									<td class="text-center" id="ratio30r31"></td>
+									<td class="text-right" id="ratio30r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>잉여현금흐름/매출액										<div class="hidden">
+											<div id="year3r31"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r31"></td>
+									<td class="text-right" id="year1r31"></td>
+									<td class="text-right" id="year2r31"></td>
+									<td class="text-center" id="ratio31r11"></td>
+									<td class="text-right" id="ratio31r12"></td>
+									<td class="text-center" id="ratio31r21"></td>
+									<td class="text-right" id="ratio31r22"></td>
+									<td class="text-center" id="ratio31r31"></td>
+									<td class="text-right" id="ratio31r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>부채상환계수 *										<div class="hidden">
+											<div id="year3r32"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r32"></td>
+									<td class="text-right" id="year1r32"></td>
+									<td class="text-right" id="year2r32"></td>
+									<td class="text-center" id="ratio32r11"></td>
+									<td class="text-right" id="ratio32r12"></td>
+									<td class="text-center" id="ratio32r21"></td>
+									<td class="text-right" id="ratio32r22"></td>
+									<td class="text-center" id="ratio32r31"></td>
+									<td class="text-right" id="ratio32r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>순영업운전자본										<div class="hidden">
+											<div id="year3r33"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r33"></td>
+									<td class="text-right" id="year1r33"></td>
+									<td class="text-right" id="year2r33"></td>
+									<td class="text-center" id="ratio33r11"></td>
+									<td class="text-right" id="ratio33r12"></td>
+									<td class="text-center" id="ratio33r21"></td>
+									<td class="text-right" id="ratio33r22"></td>
+									<td class="text-center" id="ratio33r31"></td>
+									<td class="text-right" id="ratio33r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>순영업운전자본/매출액										<div class="hidden">
+											<div id="year3r34"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r34"></td>
+									<td class="text-right" id="year1r34"></td>
+									<td class="text-right" id="year2r34"></td>
+									<td class="text-center" id="ratio34r11"></td>
+									<td class="text-right" id="ratio34r12"></td>
+									<td class="text-center" id="ratio34r21"></td>
+									<td class="text-right" id="ratio34r22"></td>
+									<td class="text-center" id="ratio34r31"></td>
+									<td class="text-right" id="ratio34r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center">유동성</td>
+									<td>유동비율 *										<div class="hidden">
+											<div id="year3r40"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r40"></td>
+									<td class="text-right" id="year1r40"></td>
+									<td class="text-right" id="year2r40"></td>
+									<td class="text-center" id="ratio40r11"></td>
+									<td class="text-right" id="ratio40r12"></td>
+									<td class="text-center" id="ratio40r21"></td>
+									<td class="text-right" id="ratio40r22"></td>
+									<td class="text-center" id="ratio40r31"></td>
+									<td class="text-right" id="ratio40r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>당좌비율 *										<div class="hidden">
+											<div id="year3r41"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r41"></td>
+									<td class="text-right" id="year1r41"></td>
+									<td class="text-right" id="year2r41"></td>
+									<td class="text-center" id="ratio41r11"></td>
+									<td class="text-right" id="ratio41r12"></td>
+									<td class="text-center" id="ratio41r21"></td>
+									<td class="text-right" id="ratio41r22"></td>
+									<td class="text-center" id="ratio41r31"></td>
+									<td class="text-right" id="ratio41r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center">안전성</td>
+									<td>부채비율										<div class="hidden">
+											<div id="year3r50"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r50"></td>
+									<td class="text-right" id="year1r50"></td>
+									<td class="text-right" id="year2r50"></td>
+									<td class="text-center" id="ratio50r11"></td>
+									<td class="text-right" id="ratio50r12"></td>
+									<td class="text-center" id="ratio50r21"></td>
+									<td class="text-right" id="ratio50r22"></td>
+									<td class="text-center" id="ratio50r31"></td>
+									<td class="text-right" id="ratio50r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>자기자본비율 *										<div class="hidden">
+											<div id="year3r51"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r51"></td>
+									<td class="text-right" id="year1r51"></td>
+									<td class="text-right" id="year2r51"></td>
+									<td class="text-center" id="ratio51r11"></td>
+									<td class="text-right" id="ratio51r12"></td>
+									<td class="text-center" id="ratio51r21"></td>
+									<td class="text-right" id="ratio51r22"></td>
+									<td class="text-center" id="ratio51r31"></td>
+									<td class="text-right" id="ratio51r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>차입금의존도										<div class="hidden">
+											<div id="year3r52"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r52"></td>
+									<td class="text-right" id="year1r52"></td>
+									<td class="text-right" id="year2r52"></td>
+									<td class="text-center" id="ratio52r11"></td>
+									<td class="text-right" id="ratio52r12"></td>
+									<td class="text-center" id="ratio52r21"></td>
+									<td class="text-right" id="ratio52r22"></td>
+									<td class="text-center" id="ratio52r31"></td>
+									<td class="text-right" id="ratio52r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>단기차입금 비중										<div class="hidden">
+											<div id="year3r53"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r53"></td>
+									<td class="text-right" id="year1r53"></td>
+									<td class="text-right" id="year2r53"></td>
+									<td class="text-center" id="ratio53r11"></td>
+									<td class="text-right" id="ratio53r12"></td>
+									<td class="text-center" id="ratio53r21"></td>
+									<td class="text-right" id="ratio53r22"></td>
+									<td class="text-center" id="ratio53r31"></td>
+									<td class="text-right" id="ratio53r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center">활동성</td>
+									<td>매출채권회전율 *										<div class="hidden">
+											<div id="year3r60"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r60"></td>
+									<td class="text-right" id="year1r60"></td>
+									<td class="text-right" id="year2r60"></td>
+									<td class="text-center" id="ratio60r11"></td>
+									<td class="text-right" id="ratio60r12"></td>
+									<td class="text-center" id="ratio60r21"></td>
+									<td class="text-right" id="ratio60r22"></td>
+									<td class="text-center" id="ratio60r31"></td>
+									<td class="text-right" id="ratio60r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>매출채권회수기간										<div class="hidden">
+											<div id="year3r61"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r61"></td>
+									<td class="text-right" id="year1r61"></td>
+									<td class="text-right" id="year2r61"></td>
+									<td class="text-center" id="ratio61r11"></td>
+									<td class="text-right" id="ratio61r12"></td>
+									<td class="text-center" id="ratio61r21"></td>
+									<td class="text-right" id="ratio61r22"></td>
+									<td class="text-center" id="ratio61r31"></td>
+									<td class="text-right" id="ratio61r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>매입채무회전율 *										<div class="hidden">
+											<div id="year3r62"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r62"></td>
+									<td class="text-right" id="year1r62"></td>
+									<td class="text-right" id="year2r62"></td>
+									<td class="text-center" id="ratio62r11"></td>
+									<td class="text-right" id="ratio62r12"></td>
+									<td class="text-center" id="ratio62r21"></td>
+									<td class="text-right" id="ratio62r22"></td>
+									<td class="text-center" id="ratio62r31"></td>
+									<td class="text-right" id="ratio62r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>매입채무지급기간										<div class="hidden">
+											<div id="year3r63"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r63"></td>
+									<td class="text-right" id="year1r63"></td>
+									<td class="text-right" id="year2r63"></td>
+									<td class="text-center" id="ratio63r11"></td>
+									<td class="text-right" id="ratio63r12"></td>
+									<td class="text-center" id="ratio63r21"></td>
+									<td class="text-right" id="ratio63r22"></td>
+									<td class="text-center" id="ratio63r31"></td>
+									<td class="text-right" id="ratio63r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>재고자산회전율 *										<div class="hidden">
+											<div id="year3r64"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r64"></td>
+									<td class="text-right" id="year1r64"></td>
+									<td class="text-right" id="year2r64"></td>
+									<td class="text-center" id="ratio64r11"></td>
+									<td class="text-right" id="ratio64r12"></td>
+									<td class="text-center" id="ratio64r21"></td>
+									<td class="text-right" id="ratio64r22"></td>
+									<td class="text-center" id="ratio64r31"></td>
+									<td class="text-right" id="ratio64r32"></td>
+								</tr>
+																<tr>
+									<td class="text-center"></td>
+									<td>재고자산회전기간										<div class="hidden">
+											<div id="year3r65"></div>
+										</div>
+									</td>
+									<td class="text-right" id="year0r65"></td>
+									<td class="text-right" id="year1r65"></td>
+									<td class="text-right" id="year2r65"></td>
+									<td class="text-center" id="ratio65r11"></td>
+									<td class="text-right" id="ratio65r12"></td>
+									<td class="text-center" id="ratio65r21"></td>
+									<td class="text-right" id="ratio65r22"></td>
+									<td class="text-center" id="ratio65r31"></td>
+									<td class="text-right" id="ratio65r32"></td>
+								</tr>
+															</tbody>
+						</table>
+						*) 높을 수록 좋은 지표
+					</div>
+					<div class="ibox-content">
+						<div class="row">
+							<div class="col-sm-12 text-right">
+								<button type="button" class="btn btn-primary btn-w-m" onclick="history.back()">목록</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	function load() {
+
+// 		chart();
+		
+		window.keytype = "";
+		window.keyword = "";
+		
+		detail(0, "", "");
+	}
+
+	function chart() {
+
+
+	    window.data1 = {
+            labels: [],
+            datasets: [
+                {
+                    label: "0",
+                    backgroundColor: 'rgba(255,0,102,0.5)',
+                    borderColor: "rgba(255,0,102,0.7)",
+                    data: [],
+                	fill: false
+                }, {
+					label: "업종",
+					backgroundColor: 'rgba(126,179,148,0.5)',
+					borderColor: "rgba(126,179,148,0.7)",
+					data: [],
+                	fill: false
+				}, {
+					label: "지역",
+					backgroundColor: 'rgba(226,179,148,0.5)',
+					borderColor: "rgba(226,179,148,0.7)",
+					data: [],
+                	fill: false
+				}, {
+					label: "조직형태",
+					backgroundColor: 'rgba(155,155,155,0.5)',
+					borderColor: "rgba(155,155,155,0.7)",
+					data: [],
+                	fill: false
+				}
+			]
+        };
+		var config1 = {
+			type: "line",
+			data: window.data1,
+			options: {
+	            responsive: true,
+	            title: {
+	                display: true,
+	                text: '현금 증가 비교분석',
+	                fontSize: 18
+	            },
+	            tooltips: {
+	                mode: 'index',
+	                intersect: false,
+	                callbacks: {
+	                    label: function(tooltipItem, data) {
+	                        var datasetLabel = data.datasets[tooltipItem.datasetIndex].label;
+	                        var value = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+	                        return datasetLabel + ': ' + Number(value).toLocaleString();
+	                    }
+	                }
+	            },
+	            hover: {
+	                mode: 'nearest',
+	                intersect: true
+	            },
+		        scales: {
+	                xAxes: [{
+	                    display: true,
+	                    scaleLabel: {
+	                        display: true
+	                    }
+	                }],
+	                yAxes: [{
+		                ticks: {
+		                    callback: function(value, index, values) {
+		                        return value.toLocaleString();
+		                    }
+		                }
+	                }]
+		        }
+			}
+		};
+	    window.data2 = {
+            labels: [],
+            datasets: [
+                {
+                    label: "0",
+                    backgroundColor: 'rgba(255,0,102,0.5)',
+                    borderColor: "rgba(255,0,102,0.7)",
+                    data: [],
+                	fill: false
+                }, {
+					label: "업종",
+					backgroundColor: 'rgba(126,179,148,0.5)',
+					borderColor: "rgba(126,179,148,0.7)",
+					data: [],
+                	fill: false
+				}, {
+					label: "지역",
+					backgroundColor: 'rgba(226,179,148,0.5)',
+					borderColor: "rgba(226,179,148,0.7)",
+					data: [],
+                	fill: false
+				}, {
+					label: "조직형태",
+					backgroundColor: 'rgba(155,155,155,0.5)',
+					borderColor: "rgba(155,155,155,0.7)",
+					data: [],
+                	fill: false
+				}
+			]
+        };
+		var config2 = {
+			type: "line",
+			data: window.data2,
+			options: {
+	            responsive: true,
+	            title: {
+	                display: true,
+	                text: '기말현금 비교분석',
+	                fontSize: 18
+	            },
+	            tooltips: {
+	                mode: 'index',
+	                intersect: false,
+	                callbacks: {
+	                    label: function(tooltipItem, data) {
+	                        var datasetLabel = data.datasets[tooltipItem.datasetIndex].label;
+	                        var value = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+	                        return datasetLabel + ': ' + Number(value).toLocaleString();
+	                    }
+	                }
+	            },
+	            hover: {
+	                mode: 'nearest',
+	                intersect: true
+	            },
+		        scales: {
+	                xAxes: [{
+	                    display: true,
+	                    scaleLabel: {
+	                        display: true
+	                    }
+	                }],
+	                yAxes: [{
+		                ticks: {
+		                    callback: function(value, index, values) {
+		                        return value.toLocaleString();
+		                    }
+		                }
+	                }]
+		        }
+			}
+		};
+
+	    window.chart1 = new Chart(document.getElementById("chart1").getContext("2d"), config1);
+	    window.chart2 = new Chart(document.getElementById("chart2").getContext("2d"), config2);
+	}
+
+	function composer(year) {
+
+		detail(year, window.keytype, window.keyword);
+	}
+
+	function detail(year, keytype, keyword) {
+
+		window.keytype = keytype;
+		window.keyword = keyword;
+
+		year = Number($("#year0").text()) + year;
+		
+		$.ajax({
+			type: "post",
+			url: "http://ksifinance.com/SCRT/index.php/Ratio/ajax/view/distribution",
+			data: {
+				year: year,
+				keytype: window.keytype,
+				keyword: window.keyword
+			},
+			dataType: "json",
+			success: function( response ) {
+
+				$("td[id^='year']").each( function(index) {
+					$(this).text("");
+				});
+				$("td[id^='ratio']").each( function(index) {
+					$(this).text("");
+				});
+				
+				$("#year00").text(year);
+				$("#year0").text(year);
+				$("#year1").text(year-1);
+				$("#year2").text(year-2);
+				
+				$("td[id^='ratio']").each( function(index) {
+					$(this).val("");
+				});
+
+				var arr = JSON.parse(JSON.stringify(response));
+
+				for( var i = 0; i < arr.data.length; i++ ) {
+
+// 					comment = ( arr.data[i].financial_ratio_type_comment == "" ? Number(arr.data[i].ratiovalue).toFixed(1) + " " + arr.data[i].financial_ratio_type_unit : ( Number(arr.data[i].ratiovalue) >= 0 ? Number(arr.data[i].ratiovalue).toFixed(1) + " " + arr.data[i].financial_ratio_type_unit : arr.data[i].financial_ratio_type_comment + "(" + Number(arr.data[i].ratiovalue).toFixed(1) + " " + arr.data[i].financial_ratio_type_unit + ")" ) );
+					comment = ( arr.data[i].financial_ratio_type_comment == "" ? ( arr.data[i].financial_ratio_type_unit == "원" ? Math.round(Number(arr.data[i].financial_ratio_value)).toLocaleString() : Number(arr.data[i].financial_ratio_value).toFixed(1) + " " + arr.data[i].financial_ratio_type_unit ) : ( Number(arr.data[i].financial_ratio_value) >= 0 ? ( arr.data[i].financial_ratio_type_unit == "원" ? Math.round(Number(arr.data[i].financial_ratio_value)).toLocaleString() : Number(arr.data[i].financial_ratio_value).toFixed(1) + " " + arr.data[i].financial_ratio_type_unit ) : arr.data[i].financial_ratio_type_comment + "(" + ( arr.data[i].financial_ratio_type_unit == "원" ? Number(arr.data[i].financial_ratio_value).toLocaleString() : Number(arr.data[i].financial_ratio_value).toFixed(1) + " " + arr.data[i].financial_ratio_type_unit)  + ")" ) );
+					if( arr.data[i].kind == 1 ) { 
+						$("#year" + ( year - arr.data[i].financial_ratio_year ) + "r" + arr.data[i].financial_ratio_type_order).text(comment);
+					} else if( arr.data[i].kind == 2 ) {
+
+						$("#ratio" + arr.data[i].financial_ratio_type_order + "r" + arr.data[i].rank + "1").text(arr.data[i].member_name);
+						$("#ratio" + arr.data[i].financial_ratio_type_order + "r" + arr.data[i].rank + "2").text(comment);
+					}
+				}
+
+				for( var i = 0; i < 3; i++ ) {
+					
+					for( var j = 21; j < 23; j++ ) {
+						
+						if( Number($("#year" + i + "r" + j).text().replace(/,/g, "").replace(/%/g, "")) >= 0 ) {
+							
+							if( Number($("#year" + i + "r10").text().replace(/,/g, "").replace(/%/g, "")) < 0 && Number($("#year" + ( i + 1 ) + "r10").text().replace(/,/g, "").replace(/%/g, "")) < 0 ) {
+								if( Number($("#year" + i + "r10").text().replace(/,/g, "").replace(/%/g, "")) > Number($("#year" + ( i + 1 ) + "r10").text().replace(/,/g, "").replace(/%/g, "")) ) {
+									$("#year" + i + "r" + j).text("적자감소(" + $("#year" + i + "r" + j).text() + ")");
+								} else if( Number($("#year0r10").text().replace(/,/g, "").replace(/%/g, "")) < Number($("#year" + ( i + 1 ) + "r10").text().replace(/,/g, "").replace(/%/g, "")) ) {
+									$("#year" + i + "r" + j).text("적자확대(" + $("#year" + i + "r" + j).text() + ")");
+								}
+							}
+						} else {
+							
+							if( Number($("#year" + i + "r10").text().replace(/,/g, "").replace(/%/g, "")) > 0 && Number($("#year" + ( i + 1 ) + "r10").text().replace(/,/g, "").replace(/%/g, "")) < 0  ) {
+								$("#year" + i + "r" + j).text("흑자전환(" + $("#year" + i + "r" + j).text() + ")");
+							} else if( Number($("#year" + i + "r10").text().replace(/,/g, "").replace(/%/g, "")) > 0 && Number($("#year" + ( i + 1 ) + "r10").text().replace(/,/g, "").replace(/%/g, "")) < 0  ) {
+								$("#year" + i + "r" + j).text("적자전환(" + $("#year" + i + "r" + j).text() + ")");
+							}
+						}
+					}
+				}
+
+				$.toast({
+					text : "조회 완료 되었습니다!",
+					position : 'bottom-right',
+					stack : false
+				});
+// 				if( arr.data[i].financial_ratio_type_order == 21 || arr.data[i].financial_ratio_type_order == 22 ) {
+
+// 					if( Number(arr.data[i].ratiovalue) < 0 ) {
+// 						comment = "";
+// 					comment = ( arr.data[i].financial_ratio_type_comment == "" ? Number(arr.data[i].ratiovalue).toFixed(1) + " " + arr.data[i].financial_ratio_type_unit : ( Number(arr.data[i].ratiovalue) >= 0 ? Number(arr.data[i].ratiovalue).toFixed(1) : arr.data[i].financial_ratio_type_comment ) );
+// 					if( arr.data[i].kind == 1 ) { 
+// 						$("#year" + ( year - arr.data[i].financial_ratio_year ) + "r" + arr.data[i].financial_ratio_type_order).text(comment);
+// 					} else if( arr.data[i].kind == 2 ) {
+
+// 						$("#ratio" + arr.data[i].financial_ratio_type_order + "r" + arr.data[i].rank + "1").text(arr.data[i].member_name);
+// 						$("#ratio" + arr.data[i].financial_ratio_type_order + "r" + arr.data[i].rank + "2").text(comment);
+// 					}
+// 				} else {
+			},
+			error: function( jqXHR, textStatus, errorThrown ) {
+				console.log( jqXHR.status );
+				console.log( jqXHR.statusText );
+				console.log( jqXHR.responseText );
+				console.log( jqXHR.readyState );
+				alert("통신 중 오류가 발생되었습니다!");
+			}
+		});
+	}
+
+	function Quartile(Array, Quartile) {
+
+// 		if( Quartile == 0.00 ) {
+// 			return Array[Array.length-1];
+// 		} else if( Quartile == 1.00 ) {
+// 			return Array[0];
+// 		}
+		
+		pos = (Array.length - 1) * Quartile;
+		base = Math.floor(pos);
+		rest = pos - base;
+		
+		if( Array[Number(base)+1] !== undefined ) {
+			return Number(Array[base]) + Number(rest * (Number(Array[Number(base)+1]) - Number(Array[base])));
+		} else {
+			return Array[base];
+		}
+	}
+		 
+</script>
+
+<!-- 내용 -->
+</div>
+</div>
+<script type="text/javascript">
+	$().ready(function() { // 현황판과 scrool 동작
+
+		$(".date").mask("9999-99-99");
+		$(".price").priceFormat({prefix: '', centsLimit: 0, allowNegative: true});
+		$(".interest").priceFormat({prefix: '', centsLimit: 2});
+		$('.numbers').mask('0#');
+
+//         $('input').iCheck({
+//             checkboxClass: 'icheckbox_square-green',
+//             radioClass: 'iradio_square-green'
+//         });
+		
+		load();
+
+	//	if( $('#content-wrap').length > 0 ) {
+			var currentScrollTop = 0; // 현재 스크롤바의 위치를 저장하는 변수 (px)
+		    $(window).on("scroll", function() { // 스크롤을 하는 경우에만 실행됨
+		        scrollController();
+		    });
+			function scrollController() { // 메인 메뉴의 위치를 제어하는 함수
+			    currentScrollTop = $(window).scrollTop();
+			    if( currentScrollTop > 0 ) {
+			    	currentScrollTop -= 20;
+			    }
+			    $('#header').css("top", currentScrollTop);
+//  			    console.log(currentScrollTop);
+			}
+	//	}
+    	$('.sidebar-collapse').slimScroll({
+            height: '100%',
+            railOpacity: 0.9
+        });
+	});
+
+	function percentage(dividend, divisor, fixed) {
+
+		return ((devide(dividend, divisor) * 100).toFixed(fixed)) + " %";
+	}
+	function devide(dividend, divisor) {
+
+		dividend = Number(dividend);
+		divisor = Number(divisor);
+
+		return dividend / ( divisor == 0 ? 1 : divisor );
+	}
+	function codefixed(type, first = '') {
+
+		$("tr[id^='unfixed']").attr("style", "display:" + type);
+		$("input[id$='000']").attr("readonly", ( type == "" ? true : false ));
+		$("input[id$='000']").attr("style", ( type == "" ? "background-color:#EEEEEE" : "" ));
+	}
+	function Node(object, year) {
+
+		this.object = new Array();
+		this.object.push(object);
+		
+		this.code = new Array();
+		this.code.push(code);
+		
+		this.value = new Array();
+		this.value.push(Number(value));
+		
+		this.next = null;
+		this.prev = null;
+
+		this.year = year;
+	}
+	Node.prototype.cal = function(code, index, value) {
+
+		var position = -1;
+		var count = 1;
+
+		for( var i = 0; i < this.code.length; i++ ) {
+				
+			if( this.code[i].substring(0, index) == code.substring(0, index) ) {
+
+				if( this.code[i] == "4021003" || this.code[i] == "4021004" || this.code[i] == "4022003" || this.code[i] == "4022004" || this.code[i] == "5013000" ) {
+					value -= Number($("#code" + this.year + this.code[i]).val().replace(/,/g,""));
+				} else {
+					value += Number($("#code" + this.year + this.code[i]).val().replace(/,/g,""));
+				}
+			}
+		}
+
+		curr = this.prev;
+
+		if( curr != null ) {
+
+			if( index == 4 ) {
+				code = code.substring(0, 4) + "000";
+				index = 3;
+			} else if( index == 3 ) {
+				code = code.substring(0, 3) + "0000";
+				index = 1;
+			} else if( index == 1 ) {
+				code = code.substring(0, 1) + "000000";
+			}
+
+			position = curr.code.indexOf(code);
+
+			if( position > -1 ) {
+
+				for( i = 0; i < curr.code.length; i++ ) {
+	
+					if( curr.code[i] == code ) {
+						$("#code" + this.year + code).val(value.toLocaleString());
+
+						if( code.substring(3, 7) == "0000" ) {
+							code = code.substring(0, 1) + "000000";
+							index = 1;
+						}
+					}
+				}
+
+				value = 0;
+			} else {
+				
+				tempcurr = curr;
+				while( tempcurr.prev ) {
+					tempcurr = tempcurr.prev
+					
+					if( index == 3 ) {
+						code = code.substring(0, 3) + "000";
+					} else if( index == 1 ) {
+						code = code.substring(0, 1) + "00000";
+					}
+					position = curr.code.indexOf(code);
+			
+					if( position > -1 ) {
+						curr = tempcurr.next;
+						break;
+					}
+				}
+			}
+
+			curr.cal(code, index, value);
+		} else if( code.substring(0, 1) == "4" ) {
+
+			$("#code" + this.year + "4030000").val((Number($("#code" + this.year + "4010000").val().replace(/,/g,"")) - Number($("#code" + this.year + "4020000").val().replace(/,/g,""))).toLocaleString());
+			$("#code" + this.year + "4050000").val((Number($("#code" + this.year + "4030000").val().replace(/,/g,"")) - Number($("#code" + this.year + "4040000").val().replace(/,/g,""))).toLocaleString());
+			$("#code" + this.year + "4080000").val((Number($("#code" + this.year + "4050000").val().replace(/,/g,"")) + Number($("#code" + this.year + "4060000").val().replace(/,/g,"")) - Number($("#code" + this.year + "4070000").val().replace(/,/g,""))).toLocaleString());
+			$("#code" + this.year + "4100000").val((Number($("#code" + this.year + "4080000").val().replace(/,/g,"")) - Number($("#code" + this.year + "4090000").val().replace(/,/g,""))).toLocaleString());
+		} else if( code.substring(0, 1) == "6" ) {
+
+			$("#code" + this.year + "6040000").val((Number($("#code" + this.year + "6010000").val().replace(/,/g,"")) + Number($("#code" + this.year + "6020000").val().replace(/,/g,"")) + Number($("#code" + this.year + "6030000").val().replace(/,/g,""))).toLocaleString());
+			$("#code" + this.year + "6060000").val((Number($("#code" + this.year + "6040000").val().replace(/,/g,"")) + Number($("#code" + this.year + "6050000").val().replace(/,/g,""))).toLocaleString());
+			$("#code" + this.year + "6080000").val((Number($("#code" + this.year + "6060000").val().replace(/,/g,"")) - Number($("#code" + this.year + "6070000").val().replace(/,/g,""))).toLocaleString());
+		}else {
+						$("#code" + this.year + code).val(value.toLocaleString());
+					}
+	}
+	Node.prototype.ratio = function(code) {
+
+		var head = this;
+
+		while( head.prev ) {
+			
+			head = head.prev;
+		}
+
+		if( Number($("#code" + this.year + head.code[0]).text().replace(/,/g,"")) > 0 && Number($("#code" + this.year + code).text().replace(/,/g,"")) != 0 ) {
+
+			$("#ratio" + this.year + code).text(Math.round(Number($("#code" + this.year + code).text().replace(/,/g,""))/Number($("#code" + this.year + head.code[0]).text().replace(/,/g,""))*100, 2) + "%");
+		}
+	} 
+	function DoublyLinkedList(year) {
+		
+		this._length = 0;
+		this._head = null;
+		this._tail = null;
+		this._year = year;
+	}
+	DoublyLinkedList.prototype.append = function(object) {
+
+		
+		code = object.id.substring(5, 12);
+		value = object.value
+		
+		var node = new Node(object, this._year);
+		
+		if( this._head == null ) {
+
+			this._head = node;
+
+			$("#" + object.id).on("ratio", function(event) {
+
+// 				curr.ratio(object.id.substring(5, 12));
+			});
+		} else {
+
+			var curr;
+			var same = false;
+
+			curr = this._head;
+			
+			while( curr.next ) {
+				
+				curr = curr.next;
+				
+				parent = curr.code[curr.code.length-1];
+				parent = Number(parent);
+				child = Number(code);
+				
+				if( Math.floor(parent/1000000) == Math.floor(child/1000000) && Math.floor(child%10000) == 0 ) {
+					same = true;
+					break;
+				} else if( Math.floor(parent/10000) <= Math.floor(child/10000) && Math.floor((parent%10000)/1000) > 0 && Math.floor((parent%10000)/1000) > 0 && Math.floor(child%1000) == 0 ) {
+					same = true;
+					break;
+				} else if( Math.floor(parent%1000) > 0 ) {
+					same = true;
+					break;
+				}
+			}
+
+			if( same ) {
+
+				curr.object.push(object);
+				curr.code.push(code);
+				curr.value.push(Number(value));
+				
+				$("#" + object.id).keyup( function(event) {
+
+	 				if( object.id.substring(8, 12) == "0000" ) {
+	 					curr.cal(object.id.substring(5, 12), 1, 0);
+	 				} else if( object.id.substring(9, 12) == "000" ){
+	 					curr.cal(object.id.substring(5, 12), 3, 0);
+	 				} else {
+						curr.cal(object.id.substring(5, 12), 4, 0);
+					}
+					curr.ratio(object.id.substring(5, 12));
+				});
+				
+				$("#" + object.id).on("ratio", function(event) {
+
+					curr.ratio(object.id.substring(5, 12));
+				});
+			} else {
+				
+				curr.next = node;
+				node.prev = curr;
+				
+				$("#" + object.id).keyup( function(event) {
+
+	 				if( object.id.substring(8, 12) == "0000" ) {
+	 					node.cal(object.id.substring(5, 12), 1, 0);
+	 				} else if( object.id.substring(9, 12) == "000" ){
+	 					node.cal(object.id.substring(5, 12), 3, 0);
+	 				} else {
+						node.cal(object.id.substring(5, 12), 4, 0);
+					}
+					curr.ratio(object.id.substring(5, 12));
+				});
+				
+				$("#" + object.id).on("ratio", function(event) {
+
+					curr.ratio(object.id.substring(5, 12));
+				});
+			}
+			
+
+		}
+
+		this._length++;
+	}
+	DoublyLinkedList.prototype.search = function(value) {
+
+		if( value == "" || this._length == 0 ) {
+			return null;			
+		}
+
+		curr = this._head;
+
+		while( curr.next ) {
+			curr = curr.next;
+			
+			if( curr.data.indexOf(value) > -1 ) {
+				return curr;
+			}
+		}
+
+		return curr;
+	}
+</script>
+</body>
+</html>
